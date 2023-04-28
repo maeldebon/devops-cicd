@@ -4,7 +4,7 @@ import Cart from './views/Cart';
 import Product from './views/Product';
 import Products from './views/Products';
 
-const Router = () => {
+const Router = (): JSX.Element => {
     return (
         <BrowserRouter>
             <Routes>

@@ -5,7 +5,7 @@ import Router from './Router';
 import { CartContext } from './utils/context';
 import { ProductT } from './utils/types';
 
-function App() {
+function App(): JSX.Element {
     const [productList, setProductList] = useState<ProductT[]>([]);
 
     return (
