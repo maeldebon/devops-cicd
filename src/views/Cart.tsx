@@ -1,6 +1,8 @@
-import { ReactElement, useContext } from "react";
-import { Link } from "react-router-dom";
-import { CartContext } from "../utils/context";
+import { ReactElement, useContext } from 'react';
+
+import { Link } from 'react-router-dom';
+
+import { CartContext } from '../utils/context';
 
 const Cart = (): ReactElement => {
     const { productList, setProductList } = useContext(CartContext);

@@ -1,7 +1,8 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Products from "./views/Products";
-import Product from "./views/Product";
-import Cart from "./views/Cart";
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+
+import Cart from './views/Cart';
+import Product from './views/Product';
+import Products from './views/Products';
 
 const Router = () => {
     return (

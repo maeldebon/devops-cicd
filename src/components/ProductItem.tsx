@@ -1,5 +1,6 @@
-import { ReactElement } from "react";
-import { Link } from "react-router-dom";
+import { ReactElement } from 'react';
+
+import { Link } from 'react-router-dom';
 
 interface ProductItemProps {
     id: number;

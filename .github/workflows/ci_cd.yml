@@ -13,6 +13,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Install dependencies
+      run: npm install
+    - name: Build app
+      run: npm run build
+    - name: Run linters and deadcode finder
+      run: |
+          npm run prettier
+          npm run eslint
+          npm run find-deadcode
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 

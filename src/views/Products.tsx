@@ -1,13 +1,14 @@
-import { ReactElement, useEffect, useState } from "react";
-import ProductItem from "../components/ProductItem";
-import { ProductT } from "../utils/types";
+import { ReactElement, useEffect, useState } from 'react';
+
+import ProductItem from '../components/ProductItem';
+import { ProductT } from '../utils/types';
 
 const Products = (): ReactElement => {
     const [products, setProducts] = useState<ProductT[]>([]);
     const [pagination, setPagination] = useState(1);
 
     useEffect(() => {
-        fetch("https://fakestoreapi.com/products")
+        fetch('https://fakestoreapi.com/products')
             .then((res) => {
                 return res.json();
             })
@@ -19,7 +20,7 @@ const Products = (): ReactElement => {
     return (
         <>
             {products
-                ?.slice((pagination - 1) * 5, pagination * 5)
+                .slice((pagination - 1) * 5, pagination * 5)
                 .map((product) => (
                     <ProductItem
                         key={product.id}

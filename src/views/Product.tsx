@@ -1,7 +1,9 @@
-import { ReactElement, useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { CartContext } from "../utils/context";
-import { ProductT } from "../utils/types";
+import { ReactElement, useContext, useEffect, useState } from 'react';
+
+import { Link, useParams } from 'react-router-dom';
+
+import { CartContext } from '../utils/context';
+import { ProductT } from '../utils/types';
 
 const Product = (): ReactElement => {
     const [product, setProduct] = useState<ProductT>();

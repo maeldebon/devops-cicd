@@ -1,8 +1,9 @@
-import { useState } from "react";
-import "./App.css";
-import Router from "./Router";
-import { CartContext } from "./utils/context";
-import { ProductT } from "./utils/types";
+import { useState } from 'react';
+
+import './App.css';
+import Router from './Router';
+import { CartContext } from './utils/context';
+import { ProductT } from './utils/types';
 
 function App() {
     const [productList, setProductList] = useState<ProductT[]>([]);

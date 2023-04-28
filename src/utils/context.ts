@@ -1,5 +1,6 @@
-import { createContext } from "react";
-import { ProductT } from "./types";
+import { createContext } from 'react';
+
+import { ProductT } from './types';
 
 const defaultValue = {
     productList: [],
