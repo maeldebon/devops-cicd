@@ -9,7 +9,7 @@ const Cart = (): ReactElement => {
 
     return (
         <>
-            <Link to="/">homepage</Link>
+            <Link to="/">Homepage</Link>
             {productList.map((product) => (
                 <div key={product.id}>
                     <p>{product.title}</p>
